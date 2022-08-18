@@ -52,3 +52,4 @@ jobs:
         path: .
     - name: Running Containers
       run: docker-compose up --force-recreate -d
+      
