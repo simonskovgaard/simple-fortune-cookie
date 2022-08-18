@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  backend:
+    container_name: backend
+    build: .
+    image: sskovgaard90/backend
+
+  frontend:
+    container_name: frontend
+    build: .
+    image: sskovgaard90/frontend
+    environment:
+      - BACKEND_DNS=backend
+    ports:
+      - 8080:8080
