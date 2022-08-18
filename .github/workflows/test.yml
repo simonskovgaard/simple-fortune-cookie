@@ -40,4 +40,4 @@ jobs:
     - name: Debug
       run: ls
     - name: Running Containers
-      run: docker-compose up -d
+      run: docker-compose up
