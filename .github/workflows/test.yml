@@ -48,4 +48,4 @@ jobs:
     needs: Docker-image
     steps:
     - name: Running Containers
-      run: docker-compose up -f . -d
+      run: chmod +x ci/docker-compose.sh && ci/docker-compose.sh
