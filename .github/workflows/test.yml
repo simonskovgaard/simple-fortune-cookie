@@ -47,5 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: Docker-image
     steps:
+    - name: Debug
+      run: ls
     - name: Running Containers
-      run: chmod +x ci/docker-compose.sh && ci/docker-compose.sh
+      run: docker-compose up -d
