@@ -42,7 +42,7 @@ jobs:
     - name: Execute test
       run: chmod +x ci/test.sh && ci/test.sh
   Deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: Test
     steps:
     - name: Download code
