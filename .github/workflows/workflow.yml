@@ -5,7 +5,7 @@ env:
 on:
   push:
     branches:
-      - "heuhzxckiduv/**"
+      - "feature/**"
 jobs:
   Clone-down:
     name: Clone down repo
@@ -51,5 +51,4 @@ jobs:
         name: code
         path: .
     - name: Running Containers
-      run: docker-compose up
-
+      run: docker-compose up -d
