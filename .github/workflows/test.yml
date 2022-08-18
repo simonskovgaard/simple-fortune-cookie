@@ -37,7 +37,5 @@ jobs:
       with:
         name: code
         path: .
-    - name: Debug
-      run: ls
     - name: Running Containers
       run: docker-compose up
